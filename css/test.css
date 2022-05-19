@@ -1,0 +1,161 @@
+/* GENERALS */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+html {
+  font-size: 62.5%;
+  --ligthcolor: #D9D9DC;
+  --midcolor: #787879;
+  --accentcolor: #1176AD;
+  background-color: white;
+}
+
+html * {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+html body h1 {
+  color: #1176AD;
+  margin: 1rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+html body h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin: 1rem;
+}
+
+html body h3 {
+  -webkit-columns: #787879;
+          columns: #787879;
+}
+
+html body h4 {
+  color: #1176AD;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+html body p {
+  color: #787879;
+  font-size: 1.8rem;
+  text-align: justify;
+  margin: 2rem;
+}
+
+html body input {
+  font-size: 1.6rem;
+}
+
+html body .pending {
+  font-size: 4em;
+  color: #1176AD;
+  text-align: center center;
+  padding: 100px;
+  margin: auto;
+}
+
+.theteampage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.theteampage .team {
+  width: 28rem;
+  height: 48rem;
+  overflow: hidden;
+  margin: 2rem;
+  border: 2px solid var(--accentcolor);
+  border-radius: 16px;
+  position: relative;
+}
+
+.theteampage .team img {
+  position: absolute;
+  width: 28rem;
+  height: 100%;
+  border-radius: 16px;
+  z-index: 3;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.theteampage .team .info {
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 2rem;
+  border-top: 4px solid var(--accentcolor);
+  border-radius: 50% 50% 0px 0px;
+  padding-top: 6rem;
+  text-align: center;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.theteampage .team .info .social {
+  padding-block: 16px;
+  font-size: 2rem;
+}
+
+.theteampage .team .info .social i {
+  display: inline-block;
+  width: 5rem;
+  padding: 10px;
+  background-color: #ededed;
+  color: var(--midcolor);
+  border-radius: 16px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.theteampage .team .info .social i:hover {
+  color: var(--ligthcolor);
+  background-color: var(--midcolor);
+}
+
+.theteampage .team:hover img {
+  width: 15rem;
+  height: 26rem;
+  border: 2px solid var --accentcolor;
+  left: 6rem;
+  top: 6rem;
+}
+
+.theteampage .team:hover .info {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.theteampage .team::before {
+  content: '';
+  background-image: url(../img/staff-a.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  -webkit-filter: blur(4px) grayscale(100%);
+          filter: blur(4px) grayscale(100%);
+  width: 100%;
+}
+/*# sourceMappingURL=test.css.map */
