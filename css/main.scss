@@ -54,11 +54,11 @@ html{
     }
 }
 
-/* HOME CUSTOMS */
+
 .container__main{
     display: flex;
 
-    height: 100vh;
+    height: 90vh;
     .hero__rocket{
         display: none;
         width: 600vh;;
@@ -155,7 +155,7 @@ html{
     }
 }
 
-/* HEADER MENU TO USE ON SECONDARY PAGES */
+
 
 .topmenu{
     display: flex;
@@ -196,7 +196,7 @@ html{
     }    
 }
 
-/* FOOTER MENU TO USE ON SECONDARY PAGES */
+
 .foot{
     position: fixed;
     bottom: 0;
@@ -217,10 +217,10 @@ html{
     
 }
 
-/* ROCKETS PAGE */
+/* 
 .rocketspage{
-    width: 100%;
-    display:flex;
+   width: 100%;
+
 
     .gallery{
         margin: 1rem;
@@ -229,30 +229,31 @@ html{
         align-content: center;
         justify-content: center;
         gap: 2rem;
+        
         grid-auto-flow: dense;
         grid-auto-rows: 37rem;
         grid-template-columns: repeat(auto-fill, minmax(10rem,1fr));
+     
         .cards{
             width: 100%;
+            
             grid-column: span 3;
             max-width: 72em;
+           
             border-radius: 2em;
             height: 360px;
             padding: 2rem 1rem;
             display: flex;
+            
             position: relative;
+        
             align-items: flex-end;
             transition: 0.5s all;
+          
             box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
             
         }
-        .large{
-            grid-column: span 6;
-            max-width: 144em;
-        }
-        .tall{
-            grid-row: span 2;
-        }
+   
         img{
             width: 100%;
             height: 100%;
@@ -260,11 +261,11 @@ html{
             position: absolute;
             top: 0;
             left: 0;
-            z-index: -1;
+            z-index: -0;
             border-radius: 20px;
         }
         .info{
-            display: none;
+            opacity: 0;
             z-index: 4;
         }
         .cards:before{
@@ -272,25 +273,27 @@ html{
         }
         .cards:hover{
             z-index: inherit;
-            transform: translateY(20px);
+            
             .info{
                 display:inline;
+                opacity: 1;
             }
             img{
                 opacity: 0.25;
             }
         }
+
     }
 }
+*/
 
-/* THE TEAM PAGE */
 .theteampage{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
     align-content:center;
      .team{
-        width: 28rem;
+        /* width: 28rem; */
         height: 48rem;
         overflow: hidden;
         margin: 2rem;
@@ -299,7 +302,7 @@ html{
         position: relative;
         img{
           position: absolute;
-          width: 28rem;
+          /* width: 28rem; */
           height: 100%;
           border-radius: 16px;
           z-index: 3;
@@ -356,7 +359,7 @@ html{
         content: '';
         background-image: var(--teamimg);
         background-size: cover;
-        background-position: center;
+        /* background-position: center; */
         position: absolute;
         top: 0;
         left: 0;
@@ -368,7 +371,7 @@ html{
     }
 }
 
-/* BOOKING PAGE */
+
 .bookpage{
     .book__box{
         margin-top: 50px;
@@ -404,7 +407,7 @@ html{
     }
 }
 
-/* CONTACT PAGE */
+
 .contactpage{
 
     .contactbox{
@@ -414,11 +417,12 @@ html{
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-evenly;
+        /*
         label, input, select, option, .button{
             font-size: 1.5rem;
-            margin-top: 5px;
+            
             border-radius: 1rem;
-  
+            
             
         }
         input, option{
@@ -432,25 +436,15 @@ html{
             color: var(--midcolor);
         }
         
-
+        */
         .formbox {
             width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             margin: 2rem;
-            select {
 
-                border: 1px solid #639EBF;
-
-                text-align: center;
-                font-size: 1.5rem;   
-            }
-            input {
-                text-align: center;
-                
-            }
-            .button{
+            button{
                 background-color: #639EBF;
                 color: white;
             }
@@ -462,23 +456,26 @@ html{
     }
 }
 
-/* FORCED CHANGES IN CASE OF MOBILE */
+
 
 @media only screen and (max-width: 934px) {
     .rocketspage{
         margin: 5px;
         .gallery{
+            color: inherit;
+            /*
             .cards{
                 grid-column: span 6;
             }
             .tall{
                 grid-row: span 1;
-            }
-        }
+            }*/
+           
+        } 
     }
 }
 
-/* MODIFY STYLE FOR LARGER SCREENS */
+
 @media only screen and (min-width: 768px){
     .topmenu{
         .menu__logo{
@@ -520,7 +517,7 @@ html{
     }
 }
 
-/* EFFECTS */
+
 @keyframes colors {
     0%      {background-color:var(--accentcolor);}
     25%     {background-color:#639EBF;}

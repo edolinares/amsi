@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
     <header class="topmenu">
@@ -33,21 +34,31 @@
             <div class="contactbox">
                 <form class="formbox" method="get">
                     <h4>Fill the following form to be part of the wait list of space travelers:</h4>
-                    <label for="fname">First name:</label>
-                    <input type="text" id="fname" name="fname">
-                    <label for="lname">Last name:</label>
-                    <input type="text" id="lname" name="lname">
+
+                    <div class="input-group">
+                        <span class="input-group-text">First and last name</span>
+                        <input type="text" aria-label="First name" class="form-control">
+                        <input type="text" aria-label="Last name" class="form-control">
+                      </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Detalles</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+
                     <label for="package">Package:</label>
-                    <select id="package">
-                    <option selected disabled value="default">Please Select</option>
-                    <option value="solo">Solo</option>
-                    <option value="adventure">Adventure</option>
-                    <option value="business">Business</option>
-                    <option value="romantic">Romantic</option>
+                    <select class="form-select" multiple aria-label="multiple select example">
+                        <option selected disabled value="default">Please Select</option>
+                        <option value="solo">Solo</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="business">Business</option>
+                        <option value="romantic">Romantic</option>
                     </select><br><br>
-                    <label for="start">Date:</label>
-                    <input type="date" id="start" name="trip-start" >
-                    <input type="submit" value="Submit" class="button"> 
+
+                    <button type="button" class="btn btn-info">Submit</button>
                 </form>
                 <img class="formbox__img" src="../img/form.png">
             </div>
@@ -59,5 +70,6 @@
             <a href="https://www.youtube.com/channel/UCe4v-mqGVsXmQ02PSt2tXJA"><i class="uil uil-youtube"></i></a>
         </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
