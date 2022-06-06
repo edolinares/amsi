@@ -43,6 +43,7 @@ html{
             font-size: 1.6rem;
         }
         .pending {
+            
             font-size: 4em;
             color: var(--accentcolor);
             text-align: center center;
@@ -64,7 +65,7 @@ html{
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
-        background-image: url(/img/rocketdraw.svg);
+        background-image: url(../img/rocketdraw.svg);
     }
     .container__left{
         height: 100%;
@@ -72,7 +73,7 @@ html{
         flex-direction: column;
         justify-content: space-between;
         .hero__logo{
-            background-image: url(/img/logo.png);
+            background-image: url(../img/logo.png);
             height: 30vh;
             background-size: contain;
             background-repeat: no-repeat;
@@ -209,6 +210,7 @@ html{
     a{
         font-size: 2rem;
         margin-left: 1rem;
+        margin-right: 4rem;
         color: var(--midcolor);
     }
     
@@ -431,7 +433,7 @@ html{
         
 
         .formbox {
-            width: 100%;
+            max-width: 80%;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;

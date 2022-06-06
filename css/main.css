@@ -75,7 +75,7 @@ html body .pending {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(/img/rocketdraw.svg);
+  background-image: url(../img/rocketdraw.svg);
 }
 
 .container__main .container__left {
@@ -93,7 +93,7 @@ html body .pending {
 }
 
 .container__main .container__left .hero__logo {
-  background-image: url(/img/logo.png);
+  background-image: url(../img/logo.png);
   height: 30vh;
   background-size: contain;
   background-repeat: no-repeat;
@@ -287,6 +287,7 @@ html body .pending {
 .foot a {
   font-size: 2rem;
   margin-left: 1rem;
+  margin-right: 4rem;
   color: var(--midcolor);
 }
 
@@ -316,7 +317,7 @@ html body .pending {
 }
 
 .rocketspage .gallery .cards {
-  width: 100;
+  width: 100%;
   grid-column: span 3;
   max-width: 72em;
   border-radius: 2em;
@@ -557,7 +558,7 @@ html body .pending {
 }
 
 .contactpage .contactbox .formbox {
-  width: 100%;
+  max-width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
