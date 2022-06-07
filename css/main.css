@@ -297,27 +297,34 @@ html body .pending {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .rocketspage .gallery {
   margin: 1rem;
   width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   gap: 2rem;
-  grid-auto-flow: dense;
-  grid-auto-rows: 37rem;
-  -ms-grid-columns: (minmax(10rem, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
 }
 
 .rocketspage .gallery .cards {
-  width: 100%;
+  min-width: 300px;
   grid-column: span 3;
   max-width: 72em;
   border-radius: 2em;
@@ -366,13 +373,8 @@ html body .pending {
   background-color: white;
 }
 
-.rocketspage .gallery .cards:hover {
-  z-index: inherit;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-}
-
 .rocketspage .gallery .cards:hover .info {
+  width: 250px;
   display: inline;
 }
 
@@ -481,49 +483,97 @@ html body .pending {
 }
 
 /* BOOKING PAGE */
-.bookpage .book__box {
-  margin-top: 50px;
+.bookpage .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  font-size: 2rem;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  gap: 2rem;
+  padding: 2em;
+  background: var(--ligthcolor);
+  background: radial-gradient(circle, var(--ligthcolor) 76%, var(--ligthcolor) 100%);
+  border-radius: 2em;
+  -webkit-box-shadow: 0px 5px 18px -6px var(--midcolor);
+          box-shadow: 0px 5px 18px -6px var(--midcolor);
+  max-width: 900px;
+  margin: 0 auto;
+  /* CONTACT PAGE */
+  /* FORCED CHANGES IN CASE OF MOBILE */
+  /* MODIFY STYLE FOR LARGER SCREENS */
+  /* EFFECTS */
+  /* Medium screens query booking*/
 }
 
-.bookpage .book__box select, .bookpage .book__box input {
-  width: 20rem;
-  height: 5rem;
-  border: none;
-  background-color: var(--ligthcolor);
-  text-align: center;
-  font-size: 2rem;
-  border-radius: 10px;
+.bookpage .card .card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.bookpage .book__box select, .bookpage .book__box input, .bookpage .book__box i {
-  color: var(--midcolor);
+.bookpage .card .card__content .card__content-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  padding-left: 12em;
 }
 
-.bookpage .book__box option {
-  background-color: var(--ligthcolor);
-  font-size: 1.5rem;
+.bookpage .card .card__content .card__content-left img {
+  position: absolute;
+  left: 0.4em;
+  top: -11em;
+  -webkit-animation: float 6s ease-in-out infinite;
+          animation: float 6s ease-in-out infinite;
 }
 
-.bookpage .book__box .button {
-  border-radius: 10px;
-  height: 5rem;
-  border: none;
-  background-color: #639EBF;
-  color: white;
+.bookpage .card .card__content .card__content-right .info-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-/* CONTACT PAGE */
-.contactpage .contactbox {
+.bookpage .card .card__content .card__content-right .info-content ul {
+  margin: 0px;
+  padding-left: 0px;
+  list-style: none;
+}
+
+.bookpage .card .card__content .card__content-right .info-content ul li {
+  margin-bottom: 10px;
+}
+
+.bookpage .card .card__content .card__content-right .info-content ul li:last-of-type {
+  margin-bottom: 0px;
+}
+
+.bookpage .card .card__content .card__content-right .info-content ul li p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.bookpage .card .contactpage .contactbox {
   margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -538,26 +588,26 @@ html body .pending {
           justify-content: space-evenly;
 }
 
-.contactpage .contactbox label, .contactpage .contactbox input, .contactpage .contactbox select, .contactpage .contactbox option, .contactpage .contactbox .button {
+.bookpage .card .contactpage .contactbox label, .bookpage .card .contactpage .contactbox input, .bookpage .card .contactpage .contactbox select, .bookpage .card .contactpage .contactbox option, .bookpage .card .contactpage .contactbox .button {
   font-size: 1.5rem;
   margin-top: 5px;
   border-radius: 1rem;
 }
 
-.contactpage .contactbox input, .contactpage .contactbox option {
+.bookpage .card .contactpage .contactbox input, .bookpage .card .contactpage .contactbox option {
   border: 1px solid var(--midcolor);
 }
 
-.contactpage .contactbox .button {
+.bookpage .card .contactpage .contactbox .button {
   margin-top: 2rem;
   border: none;
 }
 
-.contactpage .contactbox label, .contactpage .contactbox input, .contactpage .contactbox select {
+.bookpage .card .contactpage .contactbox label, .bookpage .card .contactpage .contactbox input, .bookpage .card .contactpage .contactbox select {
   color: var(--midcolor);
 }
 
-.contactpage .contactbox .formbox {
+.bookpage .card .contactpage .contactbox .formbox {
   max-width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -572,75 +622,72 @@ html body .pending {
   margin: 2rem;
 }
 
-.contactpage .contactbox .formbox select {
+.bookpage .card .contactpage .contactbox .formbox select {
   border: 1px solid #639EBF;
   text-align: center;
   font-size: 1.5rem;
 }
 
-.contactpage .contactbox .formbox input {
+.bookpage .card .contactpage .contactbox .formbox input {
   text-align: center;
 }
 
-.contactpage .contactbox .formbox .button {
+.bookpage .card .contactpage .contactbox .formbox .button {
   background-color: #639EBF;
   color: white;
 }
 
-.contactpage .contactbox .formbox__img {
+.bookpage .card .contactpage .contactbox .formbox__img {
   width: 40%;
   display: none;
 }
 
-/* FORCED CHANGES IN CASE OF MOBILE */
 @media only screen and (max-width: 934px) {
-  .rocketspage {
+  .bookpage .card .rocketspage {
     margin: 5px;
   }
-  .rocketspage .gallery .cards {
+  .bookpage .card .rocketspage .gallery .cards {
     grid-column: span 6;
   }
-  .rocketspage .gallery .tall {
+  .bookpage .card .rocketspage .gallery .tall {
     grid-row: span 1;
   }
 }
 
-/* MODIFY STYLE FOR LARGER SCREENS */
 @media only screen and (min-width: 768px) {
-  .topmenu .menu__logo {
+  .bookpage .card .topmenu .menu__logo {
     display: inline;
   }
-  .topmenu .menu__top .menu__link {
+  .bookpage .card .topmenu .menu__top .menu__link {
     display: inline;
   }
-  .container__main .hero__rocket {
+  .bookpage .card .container__main .hero__rocket {
     display: inline;
   }
-  .container__main .container__left .container__bottom {
+  .bookpage .card .container__main .container__left .container__bottom {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .container__main .container__left .container__bottom .container__menu {
+  .bookpage .card .container__main .container__left .container__bottom .container__menu {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     margin-left: 2em;
   }
-  .container__main .container__left .container__bottom .container__menu .social {
+  .bookpage .card .container__main .container__left .container__bottom .container__menu .social {
     display: block;
   }
-  .contactpage .contactbox .formbox {
+  .bookpage .card .contactpage .contactbox .formbox {
     width: 30%;
   }
-  .contactpage .contactbox .formbox__img {
+  .bookpage .card .contactpage .contactbox .formbox__img {
     display: inline;
   }
 }
 
-/* EFFECTS */
 @-webkit-keyframes colors {
   0% {
     background-color: var(--accentcolor);
@@ -655,6 +702,7 @@ html body .pending {
     background-color: var(--accentcolor);
   }
 }
+
 @keyframes colors {
   0% {
     background-color: var(--accentcolor);
@@ -667,6 +715,70 @@ html body .pending {
   }
   100% {
     background-color: var(--accentcolor);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .bookpage .card .card__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .bookpage .card .card__content .card__content-left {
+    padding-left: 0px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .bookpage .card .card__content .card__content-left img {
+    max-width: 120px;
+    position: absolute;
+    right: 0px;
+    left: unset;
+    top: -7em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .bookpage .card__content-right .info-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .bookpage .card__content-right .info-content ul {
+    margin-bottom: 1.5em !important;
+  }
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
   }
 }
 /*# sourceMappingURL=main.css.map */

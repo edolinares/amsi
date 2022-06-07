@@ -220,19 +220,20 @@ html{
 .rocketspage{
     width: 100%;
     display:flex;
-
+    flex-wrap:wrap;
+    justify-content:center;
+    align-content:center;
     .gallery{
         margin: 1rem;
         width: 100%;
-        display: grid;
-        align-content: center;
-        justify-content: center;
+        width: 100%;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-content:center;
         gap: 2rem;
-        grid-auto-flow: dense;
-        grid-auto-rows: 37rem;
-        grid-template-columns: repeat(auto-fill, minmax(10rem,1fr));
         .cards{
-            width: 100%;
+            min-width: 300px;
             grid-column: span 3;
             max-width: 72em;
             border-radius: 2em;
@@ -270,9 +271,8 @@ html{
             background-color: white;
         }
         .cards:hover{
-            z-index: inherit;
-            transform: translateY(20px);
             .info{
+                width: 250px;
                 display:inline;
             }
             img{
@@ -369,45 +369,71 @@ html{
 
 /* BOOKING PAGE */
 .bookpage{
-    .book__box{
-        margin-top: 50px;
+    .card {
         display: flex;
-        flex-wrap: wrap;
-        font-size: 2rem;
-        justify-content:space-evenly;
-        gap: 2rem;
-        select, input {
-            width: 20rem;
-            height: 5rem;
-            border: none;
-            background-color: var(--ligthcolor);
-            text-align: center;
-            font-size: 2rem;
-            border-radius: 10px;
-            
+        padding: 2em;
+        background: var(--ligthcolor);
+        background: radial-gradient(
+        circle,
+        var(--ligthcolor) 76%,
+        var(--ligthcolor) 100%
+        );
+        border-radius: 2em;
+        box-shadow: 0px 5px 18px -6px var(--midcolor);
+        max-width: 900px;
+        margin: 0 auto;
+        .card__content {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        .card__content-left {
+            display: flex;
+            flex-basis: 60%;
+            flex-direction: column;
+            position: relative;
+            padding-left: 12em;
+            img {
+            position: absolute;
+            left: 0.4em;
+            top: -11em;
+            animation: float 6s ease-in-out infinite;
+            }
         }
-        select, input, i{
-            color: var(--midcolor);
-        }
-        option{
-            background-color: var(--ligthcolor);
-            font-size: 1.5rem;
-        }
-        .button{
-            border-radius: 10px;
-            height: 5rem;
-            border: none;
-            background-color: #639EBF;
-            color: white;
+        .card__content-right {
+            .info-content {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+    
+            ul {
+                margin: 0px;
+                padding-left: 0px;
+                list-style: none;
+    
+                li {
+                margin-bottom: 10px;
+    
+                &:last-of-type {
+                    margin-bottom: 0px;
+                }
+    
+                p {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+                }
+            }
         }
     }
 }
+  
+
 
 /* CONTACT PAGE */
 .contactpage{
 
     .contactbox{
-       
         margin-top: 50px;
         display: flex;
         flex-wrap: wrap;
@@ -416,9 +442,7 @@ html{
         label, input, select, option, .button{
             font-size: 1.5rem;
             margin-top: 5px;
-            border-radius: 1rem;
-  
-            
+            border-radius: 1rem;    
         }
         input, option{
             border: 1px solid var(--midcolor);
@@ -430,8 +454,6 @@ html{
         label, input, select{
             color: var(--midcolor);
         }
-        
-
         .formbox {
             max-width: 80%;
             display: flex;
@@ -526,3 +548,53 @@ html{
     75%     {background-color: var(--midcolor);}
     100%    {background-color:var(--accentcolor);}
 }
+
+    /* Medium screens query booking*/
+    @media only screen and (max-width: 800px) {
+        & {
+          .card__content {
+            flex-wrap: wrap;
+    
+            .card__content-left {
+              padding-left: 0px;
+              flex-basis: 100%;
+    
+              img {
+                max-width: 120px;
+                position: absolute;
+                right: 0px;
+                left: unset;
+                top: -7em;
+              }
+            }
+            }
+          }
+        }
+      }
+    
+      @media only screen and (max-width: 450px) {
+        & {
+          .card__content-right {
+            .info-content {
+              flex-direction: column;
+              align-items: flex-start !important;
+    
+              ul {
+                margin-bottom: 1.5em !important;
+              }
+            }
+          }
+        }
+      }
+  } 
+      @keyframes float {
+          0% {
+          transform: translatey(0px);
+          }
+          50% {
+          transform: translatey(-20px);
+          }
+          100% {
+          transform: translatey(0px);
+          }
+      }
