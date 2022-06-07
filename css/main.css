@@ -31,6 +31,7 @@ html body h2 {
 }
 
 html body h3 {
+  font-size: 2rem;
   -webkit-columns: var(--midcolor);
           columns: var(--midcolor);
 }
@@ -494,7 +495,8 @@ html body .pending {
   -webkit-box-shadow: 0px 5px 18px -6px var(--midcolor);
           box-shadow: 0px 5px 18px -6px var(--midcolor);
   max-width: 900px;
-  margin: 0 auto;
+  margin: 70px auto;
+  /* Small screens query */
 }
 
 .bookpage .card .card__content {
@@ -566,6 +568,47 @@ html body .pending {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .bookpage .card .card__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .bookpage .card .card__content .card__content-left {
+    padding-left: 0px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .bookpage .card .card__content .card__content-left img {
+    max-width: 120px;
+    position: absolute;
+    right: 0px;
+    left: unset;
+    top: -7em;
+  }
+  .bookpage .card .card__content .card__content-right h3 {
+    margin-bottom: 1em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .bookpage .card .card__content-right .info-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .bookpage .card .card__content-right .info-content ul {
+    margin-bottom: 1.5em !important;
+  }
+  .bookpage .card .card__content-right .info-content a {
+    width: -webkit-fill-available;
+    text-align: center;
+  }
 }
 
 /* CONTACT PAGE */
@@ -716,41 +759,6 @@ html body .pending {
   }
 }
 
-/* Medium screens query booking*/
-@media only screen and (max-width: 800px) {
-  .booking .card__content {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .booking .card__content .card__content-left {
-    padding-left: 0px;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
-  .booking .card__content .card__content-left img {
-    max-width: 120px;
-    position: absolute;
-    right: 0px;
-    left: unset;
-    top: -7em;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .booking .card__content-right .info-content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start !important;
-        -ms-flex-align: start !important;
-            align-items: flex-start !important;
-  }
-  .booking .card__content-right .info-content ul {
-    margin-bottom: 1.5em !important;
-  }
-}
-
 @-webkit-keyframes float {
   0% {
     -webkit-transform: translatey(0px);
@@ -780,4 +788,6 @@ html body .pending {
             transform: translatey(0px);
   }
 }
+
+/*PRUEBA*/
 /*# sourceMappingURL=main.css.map */
