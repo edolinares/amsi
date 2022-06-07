@@ -383,45 +383,47 @@ html{
         max-width: 900px;
         margin: 0 auto;
         .card__content {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        .card__content-left {
             display: flex;
-            flex-basis: 60%;
-            flex-direction: column;
-            position: relative;
-            padding-left: 12em;
-            img {
-            position: absolute;
-            left: 0.4em;
-            top: -11em;
-            animation: float 6s ease-in-out infinite;
+            align-items: center;
+            flex-direction: row;
+            .card__content-left {
+                display: flex;
+                flex-basis: 60%;
+                flex-direction: column;
+                position: relative;
+                padding-left: 12em;
+                img {
+                position: absolute;
+                left: 0.4em;
+                top: -11em;
+                animation: float 6s ease-in-out infinite;
+                }
             }
-        }
-        .card__content-right {
-            .info-content {
-            display: flex;
-            align-items: flex-end;
-            justify-content: space-between;
-    
-            ul {
-                margin: 0px;
-                padding-left: 0px;
-                list-style: none;
-    
-                li {
-                margin-bottom: 10px;
-    
-                &:last-of-type {
-                    margin-bottom: 0px;
-                }
-    
-                p {
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                }
+            .card__content-right {
+                .info-content {
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+        
+                    ul {
+                        margin: 0px;
+                        padding-left: 0px;
+                        list-style: none;
+            
+                        li {
+                            margin-bottom: 10px;
+                
+                            &:last-of-type {
+                                margin-bottom: 0px;
+                            }
+                
+                            p {
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -551,7 +553,7 @@ html{
 
     /* Medium screens query booking*/
     @media only screen and (max-width: 800px) {
-        & {
+        .booking{
           .card__content {
             flex-wrap: wrap;
     
@@ -570,10 +572,9 @@ html{
             }
           }
         }
-      }
     
       @media only screen and (max-width: 450px) {
-        & {
+        .booking {
           .card__content-right {
             .info-content {
               flex-direction: column;
@@ -586,7 +587,6 @@ html{
           }
         }
       }
-  } 
       @keyframes float {
           0% {
           transform: translatey(0px);

@@ -495,11 +495,6 @@ html body .pending {
           box-shadow: 0px 5px 18px -6px var(--midcolor);
   max-width: 900px;
   margin: 0 auto;
-  /* CONTACT PAGE */
-  /* FORCED CHANGES IN CASE OF MOBILE */
-  /* MODIFY STYLE FOR LARGER SCREENS */
-  /* EFFECTS */
-  /* Medium screens query booking*/
 }
 
 .bookpage .card .card__content {
@@ -573,7 +568,8 @@ html body .pending {
   gap: 10px;
 }
 
-.bookpage .card .contactpage .contactbox {
+/* CONTACT PAGE */
+.contactpage .contactbox {
   margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -588,26 +584,26 @@ html body .pending {
           justify-content: space-evenly;
 }
 
-.bookpage .card .contactpage .contactbox label, .bookpage .card .contactpage .contactbox input, .bookpage .card .contactpage .contactbox select, .bookpage .card .contactpage .contactbox option, .bookpage .card .contactpage .contactbox .button {
+.contactpage .contactbox label, .contactpage .contactbox input, .contactpage .contactbox select, .contactpage .contactbox option, .contactpage .contactbox .button {
   font-size: 1.5rem;
   margin-top: 5px;
   border-radius: 1rem;
 }
 
-.bookpage .card .contactpage .contactbox input, .bookpage .card .contactpage .contactbox option {
+.contactpage .contactbox input, .contactpage .contactbox option {
   border: 1px solid var(--midcolor);
 }
 
-.bookpage .card .contactpage .contactbox .button {
+.contactpage .contactbox .button {
   margin-top: 2rem;
   border: none;
 }
 
-.bookpage .card .contactpage .contactbox label, .bookpage .card .contactpage .contactbox input, .bookpage .card .contactpage .contactbox select {
+.contactpage .contactbox label, .contactpage .contactbox input, .contactpage .contactbox select {
   color: var(--midcolor);
 }
 
-.bookpage .card .contactpage .contactbox .formbox {
+.contactpage .contactbox .formbox {
   max-width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -622,72 +618,75 @@ html body .pending {
   margin: 2rem;
 }
 
-.bookpage .card .contactpage .contactbox .formbox select {
+.contactpage .contactbox .formbox select {
   border: 1px solid #639EBF;
   text-align: center;
   font-size: 1.5rem;
 }
 
-.bookpage .card .contactpage .contactbox .formbox input {
+.contactpage .contactbox .formbox input {
   text-align: center;
 }
 
-.bookpage .card .contactpage .contactbox .formbox .button {
+.contactpage .contactbox .formbox .button {
   background-color: #639EBF;
   color: white;
 }
 
-.bookpage .card .contactpage .contactbox .formbox__img {
+.contactpage .contactbox .formbox__img {
   width: 40%;
   display: none;
 }
 
+/* FORCED CHANGES IN CASE OF MOBILE */
 @media only screen and (max-width: 934px) {
-  .bookpage .card .rocketspage {
+  .rocketspage {
     margin: 5px;
   }
-  .bookpage .card .rocketspage .gallery .cards {
+  .rocketspage .gallery .cards {
     grid-column: span 6;
   }
-  .bookpage .card .rocketspage .gallery .tall {
+  .rocketspage .gallery .tall {
     grid-row: span 1;
   }
 }
 
+/* MODIFY STYLE FOR LARGER SCREENS */
 @media only screen and (min-width: 768px) {
-  .bookpage .card .topmenu .menu__logo {
+  .topmenu .menu__logo {
     display: inline;
   }
-  .bookpage .card .topmenu .menu__top .menu__link {
+  .topmenu .menu__top .menu__link {
     display: inline;
   }
-  .bookpage .card .container__main .hero__rocket {
+  .container__main .hero__rocket {
     display: inline;
   }
-  .bookpage .card .container__main .container__left .container__bottom {
+  .container__main .container__left .container__bottom {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .bookpage .card .container__main .container__left .container__bottom .container__menu {
+  .container__main .container__left .container__bottom .container__menu {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     margin-left: 2em;
   }
-  .bookpage .card .container__main .container__left .container__bottom .container__menu .social {
+  .container__main .container__left .container__bottom .container__menu .social {
     display: block;
   }
-  .bookpage .card .contactpage .contactbox .formbox {
+  .contactpage .contactbox .formbox {
     width: 30%;
   }
-  .bookpage .card .contactpage .contactbox .formbox__img {
+  .contactpage .contactbox .formbox__img {
     display: inline;
   }
 }
 
+/* EFFECTS */
 @-webkit-keyframes colors {
   0% {
     background-color: var(--accentcolor);
@@ -702,7 +701,6 @@ html body .pending {
     background-color: var(--accentcolor);
   }
 }
-
 @keyframes colors {
   0% {
     background-color: var(--accentcolor);
@@ -718,17 +716,18 @@ html body .pending {
   }
 }
 
+/* Medium screens query booking*/
 @media only screen and (max-width: 800px) {
-  .bookpage .card .card__content {
+  .booking .card__content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .bookpage .card .card__content .card__content-left {
+  .booking .card__content .card__content-left {
     padding-left: 0px;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
-  .bookpage .card .card__content .card__content-left img {
+  .booking .card__content .card__content-left img {
     max-width: 120px;
     position: absolute;
     right: 0px;
@@ -738,7 +737,7 @@ html body .pending {
 }
 
 @media only screen and (max-width: 450px) {
-  .bookpage .card__content-right .info-content {
+  .booking .card__content-right .info-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -747,7 +746,7 @@ html body .pending {
         -ms-flex-align: start !important;
             align-items: flex-start !important;
   }
-  .bookpage .card__content-right .info-content ul {
+  .booking .card__content-right .info-content ul {
     margin-bottom: 1.5em !important;
   }
 }
