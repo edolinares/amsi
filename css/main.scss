@@ -14,16 +14,16 @@ html{
     }
     background-color: white;
     body{
+        h1, h2, h3, h4, h5, h6{
+            text-align: center;
+            margin: 1rem;
+        }
         h1{
             color: var(--accentcolor);
-            margin: 1rem;
-            text-align: center;
             font-size: 3rem;
         }
         h2{
-            text-align: center;
             font-size: 2.4rem;
-            margin: 1rem;
         }
         h3{
             font-size: 2rem;
@@ -31,8 +31,7 @@ html{
         }
         h4{
             color: var(--accentcolor);
-            font-size: 1.5rem;
-            text-align: center;   
+            font-size: 1.5rem;  
         }
         p{
             color: var(--midcolor);
@@ -59,7 +58,7 @@ html{
     display: flex;
 
     height: 100vh;
-    .hero__rocket{
+    & .hero__rocket{
         display: none;
         width: 600vh;;
         height: 100%;
@@ -68,7 +67,7 @@ html{
         background-position: center center;
         background-image: url(../img/rocketdraw.svg);
     }
-    .container__left{
+    & .container__left{
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -80,7 +79,7 @@ html{
             background-repeat: no-repeat;
             background-position: center center;
         }
-        .container__bottom{  
+        & .container__bottom{  
             display: flex;
             flex-direction: column-reverse;
             align-items: center;
@@ -114,7 +113,7 @@ html{
                     display: none;
                 }
             }
-            .hero__welcome{
+            & .hero__welcome{
                 display: flex;
                 flex-direction: column;
   

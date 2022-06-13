@@ -17,17 +17,18 @@ html * {
   text-decoration: none;
 }
 
+html body h1, html body h2, html body h3, html body h4, html body h5, html body h6 {
+  text-align: center;
+  margin: 1rem;
+}
+
 html body h1 {
   color: var(--accentcolor);
-  margin: 1rem;
-  text-align: center;
   font-size: 3rem;
 }
 
 html body h2 {
-  text-align: center;
   font-size: 2.4rem;
-  margin: 1rem;
 }
 
 html body h3 {
@@ -39,7 +40,6 @@ html body h3 {
 html body h4 {
   color: var(--accentcolor);
   font-size: 1.5rem;
-  text-align: center;
 }
 
 html body p {
