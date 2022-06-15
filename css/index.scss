@@ -1,18 +1,18 @@
 /* GENERALS */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-@import './misc/variables';
-@import './misc/normalization';
 
-@import './pages/index';
-@import './partials/footer';
-@import './partials/header';
+@import '../sass/misc/variables';
+@import '../sass/misc/normalization';
 
-@import './pages/rockets';
-@import './pages/theteam';
-@import './pages/book';
-@import './pages/contact';
+@import '../sass/pages/index';
+@import '../sass/partials/footer';
+@import '../sass/partials/header';
+
+@import '../sass/pages/rockets';
+@import '../sass/pages/theteam';
+@import '../sass/pages/book';
+@import '../sass/pages/contact';
 
 
-
-@import './misc/animations';
+@import '../sass/misc/animations';
