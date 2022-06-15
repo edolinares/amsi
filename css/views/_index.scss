@@ -1,0 +1,98 @@
+.container__main{
+    display: flex;
+
+    height: 100vh;
+    & .hero__rocket{
+        display: none;
+        width: 600vh;;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url(../img/rocketdraw.svg);
+    }
+    & .container__left{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .hero__logo{
+            background-image: url(../img/logo.png);
+            height: 30vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        & .container__bottom{  
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+            .container__menu{
+                text-align: center;   
+                background-color: var(--accentcolor);
+                padding: 0em;
+                border-radius: 20px;
+                margin-bottom: 2em;
+                animation: colors 5s infinite;
+                ul{
+                    align-items: center;
+                    justify-content: center;
+                }
+                a{
+                    display:inline-block;
+                    padding: .1em;
+                    font-size: 4.5em;
+                    transition: transform .2s;
+                }
+                a:hover{
+
+                    transform: scale(1.25);
+                }
+                .uil{
+
+                    color: white;
+                }
+                .social{
+                    display: none;
+                }
+            }
+            & .hero__welcome{
+                display: flex;
+                flex-direction: column;
+  
+                align-items: center;
+                .hero__newsletterbutton {
+                    margin: 2rem;
+                    form{
+                        max-width: 100%;
+                        position: relative;
+                        input:first-child{
+                            display: inline-block;
+                            width: 100%;
+                            padding: 14px 130px 14px 15px;
+                            border: 2px solid var(--accentcolor);
+                            outline: none;
+                            border-radius: 20px;
+   
+                        }
+                        input:last-child{
+                            position: absolute;
+                            display: inline-block;
+                            outline: none;
+                            border: none;
+                            padding: 10px 30px;
+                            border-radius: 20px;
+                            background-color: var(--accentcolor);
+                            color: white;
+                            top: 6px;
+                            right: 6px;
+                            animation: colors 5s infinite;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

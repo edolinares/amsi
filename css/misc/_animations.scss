@@ -1,0 +1,76 @@
+
+@media only screen and (max-width: 934px) {
+    .rocketspage{
+        margin: 5px;
+        .gallery{
+            .cards{
+                grid-column: span 6;
+            }
+            .tall{
+                grid-row: span 1;
+            }
+        }
+    }
+}
+
+/* MODIFY STYLE FOR LARGER SCREENS */
+@media only screen and (min-width: 768px){
+    .topmenu{
+        .menu__logo{
+            display: inline;
+        }
+        .menu__top{
+            .menu__link{
+                display: inline;
+            }
+        }
+    }
+    
+    .container__main{
+        .hero__rocket{
+            display: inline;
+        }
+        .container__left{
+            .container__bottom{
+                flex-direction: row;
+                .container__menu{
+                    flex-direction: row;
+                    margin-left: 2em;
+                    .social{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .contactpage{
+        .contactbox{
+            .formbox{
+                width: 30%;  
+            }
+            .formbox__img{
+                display: inline;
+            }
+        }
+    }
+}
+
+/* EFFECTS */
+@keyframes colors {
+    0%      {background-color:var(--accentcolor);}
+    25%     {background-color:#639EBF;}
+    75%     {background-color: var(--midcolor);}
+    100%    {background-color:var(--accentcolor);}
+}
+
+      @keyframes float {
+          0% {
+          transform: translatey(0px);
+          }
+          50% {
+          transform: translatey(-20px);
+          }
+          100% {
+          transform: translatey(0px);
+          }
+      }

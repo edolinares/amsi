@@ -1,0 +1,53 @@
+.contactpage{
+
+    .contactbox{
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        label, input, select, option, .button{
+            font-size: 1.5rem;
+            margin-top: 5px;
+            border-radius: 1rem;    
+        }
+        input, option{
+            border: 1px solid var(--midcolor);
+        }
+        .button{
+            margin-top: 2rem;
+            border: none;
+        }
+        label, input, select{
+            color: var(--midcolor);
+        }
+        .formbox {
+            max-width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin: 2rem;
+            select {
+
+                border: 1px solid #639EBF;
+
+                text-align: center;
+                font-size: 2.4rem;   
+            }
+            input {
+                text-align: center;
+                font-size: 2.4rem;
+                
+            }
+            .button{
+                background-color: #639EBF;
+                color: white;
+                font-size: 2.4rem;
+            }
+        }
+        .formbox__img{
+            width: 40%;
+            display: none;
+        }
+    }
+}
