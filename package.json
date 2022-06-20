@@ -291,7 +291,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-sass": "node-sass --include-path scss sass/prueba.scss css/pruebacss.css",
+    "build-sass": "node-sass --include-path scss css/index.scss css/index.css",
     "watch-css": "nodemon -e scss -x \"npm run build-sass\""
   },
   "repository": {
