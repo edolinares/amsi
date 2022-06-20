@@ -34,7 +34,7 @@
                 display: flex;
                 align-items: flex-end;
                 justify-content: space-between;
-        
+                    
                     ul {
                         margin: 0px;
                         padding-left: 0px;
@@ -96,9 +96,13 @@
                     margin-bottom: 1.5em !important;
                   }
         
-                  a {
+                  .button {
                     width: -webkit-fill-available;
                     text-align: center;
+                    background-color: #639EBF;
+                    color: white;
+                    font-size: 2.4rem;
+                    border-radius: 16px;
                   }
                 }
               }

@@ -600,9 +600,13 @@ html body .pending {
   .bookpage .card .card__content-right .info-content ul {
     margin-bottom: 1.5em !important;
   }
-  .bookpage .card .card__content-right .info-content a {
+  .bookpage .card .card__content-right .info-content .button {
     width: -webkit-fill-available;
     text-align: center;
+    background-color: #639EBF;
+    color: white;
+    font-size: 2.4rem;
+    border-radius: 16px;
   }
 }
 
