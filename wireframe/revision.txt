@@ -1,0 +1,31 @@
+Hola Felicidades por tu proyecto! •
+[ ]Success [ ]Error [ ]Warning [ ]N/A
+HTML
+[S] Respeta la semantica de las etiquetas y las etiquetas elegidas siguen la estructura del sitio.
+[S] El codigo esta ordenado , identado y tiene comentarios .
+[S] Los enlaccs se utilizan corrcctamente.
+[S] Los formularios estan dentro de una etiqueta <form></form>, los textos dentro de etiquetas <label></label> y los inputs tinenen los atributos type, name y id. 
+[S] Correcto use de etiquetas y aplicacion del SEO.
+[S] Importa recursos externos como tipografias, iconos, imagenes o videos .
+[S] Optimizacion de imagenes y recursos externos.
+Comcntarios : -
+CSS
+[S] Aplica box modeling y usa correctamentc Grid y Flex.
+[S] Utiliza medidas absolutas y relativas conscientcmente .
+[S] Correcto uso de las propicdades CSS basicas para estilado de fuentes, colores, fondos, etc .
+[S] Utiliza comentarios para separar las secciones de codigo .
+[S] Uso de animacioncs, transformcaciones y transiciones propias o externas .
+[S] El responsive esta bien logrado a traves de media queries y manejo de box modeling .
+[NA] Correcto uso del framework Bootstrap (en caso de corresponder) .
+Comcntarios : -
+SASS
+[S] Separa el codigo on distintos archivos
+[S] Uso de variables o maps.
+[S] Uso correcto de BEM y nesting.
+[ ] Uso do buckes, operadores y condicionales.
+[ ] Uso do extends o mixins.
+Comentarios: -
+GIT y Git.hub
+[S] Rcaliza commits periodicos para registrar nuevas versioncs del codigo.
+[S] Los comentarios en las commits son descriptivos.
+[S] Crea diferentes ramas para separar versuones que podrian o no fusionarse en un futuro.

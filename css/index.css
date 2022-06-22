@@ -1,5 +1,6 @@
 /* GENERALS */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+/* GENERALS */
 html {
   font-size: 62.5%;
   --ligthcolor: #D9D9DC;
@@ -61,6 +62,7 @@ html body .pending {
   margin: auto;
 }
 
+/* FIXED FOOTER AT THE BOTTOM USED ON ALL EXCEPT HOME*/
 .foot {
   /* position: fixed; */
   margin-top: 50px;
@@ -88,6 +90,7 @@ html body .pending {
   color: var(--midcolor);
 }
 
+/* FIXED HEADER AT THE BOTTOM USED ON ALL EXCEPT HOME*/
 .topmenu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,6 +150,7 @@ html body .pending {
   color: black;
 }
 
+/* HOME PAGE */
 .container__main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,6 +294,7 @@ html body .pending {
           animation: colors 5s infinite;
 }
 
+/* ROCKETS PAGE */
 .rocketspage {
   width: 100%;
   display: -webkit-box;
@@ -380,6 +385,7 @@ html body .pending {
   opacity: 0.25;
 }
 
+/* STAFF PAGE, TRANSFORMATIONS ON ANIMATION DOC*/
 .theteampage {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -479,6 +485,7 @@ html body .pending {
   width: 100%;
 }
 
+/* Booking page */
 .bookpage .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -491,6 +498,7 @@ html body .pending {
           box-shadow: 0px 5px 18px -6px var(--midcolor);
   max-width: 900px;
   margin: 70px auto;
+  /* TRANSFORM FOR SMALL SCREENS MOVING OBJECTS */
   /* Small screens query */
 }
 
@@ -610,6 +618,7 @@ html body .pending {
   }
 }
 
+/* CONTACT PAGE AND FORMS*/
 .contactpage .contactbox {
   margin-top: 50px;
   display: -webkit-box;
@@ -626,7 +635,7 @@ html body .pending {
 }
 
 .contactpage .contactbox label, .contactpage .contactbox input, .contactpage .contactbox select, .contactpage .contactbox option, .contactpage .contactbox .button {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-top: 5px;
   border-radius: 1rem;
 }
@@ -662,18 +671,18 @@ html body .pending {
 .contactpage .contactbox .formbox select {
   border: 1px solid #639EBF;
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
 .contactpage .contactbox .formbox input {
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
 .contactpage .contactbox .formbox .button {
   background-color: #639EBF;
   color: white;
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
 .contactpage .contactbox .formbox__img {
@@ -681,6 +690,7 @@ html body .pending {
   display: none;
 }
 
+/* MODIFY STYLE FOR SMALL SCREENS */
 @media only screen and (max-width: 934px) {
   .rocketspage {
     margin: 5px;
