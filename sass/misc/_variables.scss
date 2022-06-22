@@ -1,0 +1,17 @@
+/*  H5-J7 EACH TIME SMALLER FONT 0.2 */
+
+$j: 2;
+@for $i from 5 through 7{
+	h#{$i} {
+        $j: $j - 0.2;
+		font-size: $j em;
+	}
+	$i: $i+1;
+}
+
+/* MIXING TO DEFINE SIZE */
+
+@mixin size($h,$w) {
+    height: $h;
+    width: $w;
+}

@@ -1,5 +1,19 @@
 /* GENERALS */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+/*  H5-J7 EACH TIME SMALLER FONT 0.2 */
+h5 {
+  font-size: 1.8 em;
+}
+
+h6 {
+  font-size: 1.6 em;
+}
+
+h7 {
+  font-size: 1.4 em;
+}
+
+/* MIXING TO DEFINE SIZE */
 /* GENERALS */
 html {
   font-size: 62.5%;
@@ -160,8 +174,8 @@ html body .pending {
 
 .container__main .hero__rocket {
   display: none;
-  width: 600vh;
   height: 100%;
+  width: 600vh;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;

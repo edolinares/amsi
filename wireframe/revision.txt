@@ -22,8 +22,8 @@ SASS
 [S] Separa el codigo on distintos archivos
 [S] Uso de variables o maps.
 [S] Uso correcto de BEM y nesting.
-[ ] Uso do buckes, operadores y condicionales.
-[ ] Uso do extends o mixins.
+[S] Uso do buckes, operadores y condicionales.
+[S] Uso do extends o mixins.
 Comentarios: -
 GIT y Git.hub
 [S] Rcaliza commits periodicos para registrar nuevas versioncs del codigo.

@@ -5,8 +5,8 @@
     height: 100vh;
     & .hero__rocket{
         display: none;
-        width: 600vh;;
-        height: 100%;
+        @include size(100%, 600vh);
+
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
