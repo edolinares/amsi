@@ -35,7 +35,7 @@
                 display: flex;
                 align-items: flex-end;
                 justify-content: space-between;
-                    
+
                     ul {
                         margin: 0px;
                         padding-left: 0px;
@@ -54,6 +54,14 @@
                                 gap: 10px;
                             }
                         }
+                    }
+                    .button {
+                      width: 150px;
+                      text-align: center;
+                      background-color: #639EBF;
+                      color: white;
+                      font-size: 2rem;
+                      border-radius: 16px;
                     }
                 }
             }
@@ -99,11 +107,11 @@
                   }
         
                   .button {
-                    width: -webkit-fill-available;
+                    width: 90%;
                     text-align: center;
                     background-color: #639EBF;
                     color: white;
-                    font-size: 2.4rem;
+                    font-size: 2rem;
                     border-radius: 16px;
                   }
                 }

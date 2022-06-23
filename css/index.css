@@ -587,6 +587,15 @@ html body .pending {
   gap: 10px;
 }
 
+.bookpage .card .card__content .card__content-right .info-content .button {
+  width: 150px;
+  text-align: center;
+  background-color: #639EBF;
+  color: white;
+  font-size: 2rem;
+  border-radius: 16px;
+}
+
 @media only screen and (max-width: 800px) {
   .bookpage .card .card__content {
     -ms-flex-wrap: wrap;
@@ -623,11 +632,11 @@ html body .pending {
     margin-bottom: 1.5em !important;
   }
   .bookpage .card .card__content-right .info-content .button {
-    width: -webkit-fill-available;
+    width: 90%;
     text-align: center;
     background-color: #639EBF;
     color: white;
-    font-size: 2.4rem;
+    font-size: 2rem;
     border-radius: 16px;
   }
 }
